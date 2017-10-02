@@ -1,19 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package reversingdigits;
-
 import java.util.Scanner;
-
 /**
- *
- * @author joklu7045
+ * Jordan Klug
+ * October 2nd, 2017
+ * Objective: The application will serve the purpose to accept a number, reverse it and repeat it back to the user
  */
 public class ReversingDigits {
-
     /**
+     * The main method will accept the users chosen number from the Scanner,
+     * and then will call the reverseNum method with the number to reverse.
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -22,9 +18,13 @@ public class ReversingDigits {
         System.out.println("Input the number you would like to reverse: ");
         userNum = input.nextInt();
         reverseNum(userNum);
-
     }
-
+    /**
+     * This method is called by the main method to accept the users chosen number
+     * and reverse it, then prints the answer directly to the output console.
+     * 
+     * @param input 
+     */
     public static void reverseNum (int input) {
         int reversedNum = 0;
         int userNum = input;
