@@ -7,8 +7,6 @@ import java.util.Scanner;
  */
 public class ReversingDigits {
     /**
-     * The main method will accept the users chosen number from the Scanner,
-     * and then will call the reverseNum method with the number to reverse.
      * 
      * @param args the command line arguments
      */
