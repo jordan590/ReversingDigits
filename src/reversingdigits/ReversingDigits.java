@@ -13,13 +13,16 @@ public class ReversingDigits {
     public static void main(String[] args) {
         int userNum;
         Scanner input = new Scanner(System.in);
-        System.out.println("Input the number you would like to reverse: ");
+        System.out.println("Input the numbers you would like to reverse: ");
         userNum = input.nextInt();
         reverseNum(userNum);
     }
     /**
      * This method is called by the main method to accept the users chosen number
      * and reverse it, then prints the answer directly to the output console.
+     * 
+     * Precondition: An integer made by the user is needed in order to reverse numbers
+     * Postcondition: Method outputs reversed number straight to the output console.
      * 
      * @param input 
      */
