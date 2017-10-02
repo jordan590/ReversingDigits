@@ -15,7 +15,7 @@ public class ReversingDigits {
         Scanner input = new Scanner(System.in);
         System.out.println("Input the numbers you would like to reverse: ");
         userNum = input.nextInt();
-        reverseNum(userNum);
+        System.out.println("Your reversed number is: " + (int) reverseNum(userNum));
     }
     /**
      * This method is called by the main method to accept the users chosen number
@@ -26,13 +26,13 @@ public class ReversingDigits {
      * 
      * @param input 
      */
-    public static void reverseNum (int input) {
+    public static int reverseNum (int input) {
         int reversedNum = 0;
         int userNum = input;
         while (userNum != 0){
             reversedNum = reversedNum *10 + userNum % 10;
             userNum = userNum / 10;
         }
-        System.out.println("Your reversed number is: " + (int) reversedNum);
+        return (int) reversedNum;
     }
 }
